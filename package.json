@@ -1,0 +1,20 @@
+{
+  "author": "Aaron Houlihan",
+  "scripts": {
+    "start": "nodemon -r dotenv/config app.js",
+    "decode-token": "node -r dotenv/config utils/base64-decoder.js",
+    "test": "nodemon utils/fhir-blood-pressure-parser.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "base-64": "^1.0.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "njwt": "^1.0.0",
+    "redis": "^3.0.2",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
