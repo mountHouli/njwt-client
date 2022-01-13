@@ -23,7 +23,7 @@ claims = {
 }
 
 const token = njwt.create(claims, secret, algorithm) // njwt lib
-token.setExpiration(new Date().getTime() + 60 * 1000)
+token.setExpiration(new Date().getTime() + 1000 * 60 * 10)
 
 // console.log('token --------------------------------------------------------------------------')
 // console.log(token)
